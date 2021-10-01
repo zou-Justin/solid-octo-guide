@@ -3,4 +3,6 @@ SoftDev
 K08 -- QCCs of other workshops
 2021-09-30
 
-We learned that $ python3 -m venv ~/myherozero would essentially just be creating a virtual environment inside the directory myherozero. If the directory doesn’t exist it would be created otherwise it would be reused Venv stands for Virtual Environment. This is useful when dealing with importing libraries that more than one project is using but you need different versions of that library. A virtual environment allows you to use create different environments for each directory/project so you can import different libraries and versions for each project depending on what you need.
+We learned that $ python3 -m venv ~/myherozero would essentially just be creating a virtual environment inside the directory myherozero.
+If the directory doesn’t exist it would be created otherwise it would be reused Venv stands for Virtual Environment. 
+This is useful when dealing with importing libraries that more than one project is using but you need different versions of that library. A virtual environment allows you to use create different environments for each directory/project so you can import different libraries and versions for each project depending on what you need.
