@@ -7,6 +7,12 @@ import random
 import csv
 
 
+#We read our file by opening up and setting it as csvfile(variable name). 
+#Using the csv library, we open up our file using dictReader() which automatically converts every line in the file into a dictionary. 
+#Then we can parse through each line and set the float values to each occupation in our own dictionary. 
+#Input was the file, output were the rows as dictionaries that we convert to a dictionary.
+
+
 randomNum = random.random()* 99.8
 dict = {}
     
