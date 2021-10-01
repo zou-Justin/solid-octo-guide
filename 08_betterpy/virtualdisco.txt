@@ -8,3 +8,7 @@ If the directory doesn’t exist it would be created otherwise it would be reuse
 This is useful when dealing with importing libraries that more than one project is using but you need different versions of that library. 
 A virtual environment allows you to use create different environments for each directory/project,
 so you can import different libraries and versions for each project depending on what you need.
+
+Sources:
+https://docs.python.org/3/library/venv.html
+https://realpython.com/python-virtual-environments-a-primer/
