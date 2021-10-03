@@ -6,4 +6,4 @@ def hello_world():
     print(__name__) # Q2: Where will this print to? Q3: What will it print?
     return "No hablo queso!"  # Q3: Will this appear anywhere? How u know?
 
-app.run()  # Q4: Where have you seen similar construcs in other languages?
+app.run(host='0.0.0.0',port=5000)  # Q4: Where have you seen similar construcs in other languages?
