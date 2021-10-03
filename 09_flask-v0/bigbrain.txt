@@ -1,0 +1,15 @@
+Mark Zhu, Justin Zou
+
+
+Q0: This seems similar to declaring an object in java without the new modifier next to it.
+
+
+Q1: Perhaps it could be the division sign or the sign used to divide folders.
+
+
+Q2: This will print to the terminal. 
+Q3: It should print the object's id?
+
+Q3: I don't think it will appear anywhere because the return statement doesn't necessarily print something out.
+
+Q4: Once again, it looks like an object using a function within its class.
