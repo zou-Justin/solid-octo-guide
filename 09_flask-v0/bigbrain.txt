@@ -1,4 +1,5 @@
-Team MJZ: Mark Zhu, Justin Zou, Piggy, 
+Team MJZ: Mark Zhu, Justin Zou
+Duckies: Bob the third Junior, Piggy
 Software Development
 K09: First Flask App Q/C/C 
 2021-10-03
