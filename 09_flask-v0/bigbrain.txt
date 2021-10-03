@@ -1,15 +1,22 @@
-Mark Zhu, Justin Zou
+Team MJZ: Mark Zhu, Justin Zou, Piggy, 
+Software Development
+K09: First Flask App Q/C/C 
+2021-10-03
 
-
-Q0: This seems similar to declaring an object in java without the new modifier next to it.
-
+Q0: This seems similar to declaring an object in java without the new modifier next to it. 
+It acts like a constructor.
 
 Q1: Perhaps it could be the division sign or the sign used to divide folders.
 
-
-Q2: This will print to the terminal. 
-Q3: It should print the object's id?
+Q2: This will print to the terminal. It should print the object's id.
+New notes: It seems to have printed the link to the web broswer.
 
 Q3: I don't think it will appear anywhere because the return statement doesn't necessarily print something out.
+New notes: "No hablo queso" prints out on the web browser that you get linked to from the terminal
 
 Q4: Once again, it looks like an object using a function within its class.
+
+More notes:
+The new browser that we get sent to only has the words "No hablo queso!". It seems that everything else in the app.py file was used to just print out this phrase.
+The link to the web browser is always 127.0.0.1:5000
+The broswer link didn't work when ran on my terminal when sshing into the lab computers
