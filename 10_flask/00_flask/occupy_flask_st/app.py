@@ -1,4 +1,4 @@
-# Mark Zhu, Justin Zou, Han Zhang (Team MJH)
+# Team MJH: Mark Zhu(Bob the 3rd Jr), Justin Zou(Piggy), Han Zhang(Sirap)
 # SoftDev
 # K10: Putting Little Pieces Together
 # 2021-10-4
