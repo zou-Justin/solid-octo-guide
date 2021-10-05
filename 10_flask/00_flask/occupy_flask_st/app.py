@@ -31,7 +31,7 @@ def listoccupations():
     
     dict.pop('Total')
 
-    return "<br/><br/><b>List of occupations: </b> <br/>`" + "<br />".join(dict.keys())
+    return "<br/><br/><b>List of occupations: </b> <br/>" + "<br />".join(dict.keys())
 
 def randomoccupation():
     randomNum = random.random()* 99.8
