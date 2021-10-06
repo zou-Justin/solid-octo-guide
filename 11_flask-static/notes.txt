@@ -1,4 +1,15 @@
- Team MJH: Mark Zhu(Bob the 3rd Jr), Justin Zou(Piggy), Han Zhang(Sirap)
- SoftDev
- K11: Some Things Never Change
- 2021-10-6
+Team MJH: Mark Zhu(Bob the 3rd Jr), Justin Zou(Piggy), Han Zhang(Sirap)
+SoftDev
+K11: Some Things Never Change
+2021-10-6
+
+Q: What happens when you access this file via http://localhost:5000/static/foo?
+Predictions: We expect this to download the file foo, because foo is not an html file.
+Based on limited memory of how html works.
+Discoveries: Accessing the file via the link, it prompts you to download foo.
+After downloading foo and checking its contents, it has the same contents as
+our local version of foo.
+
+Q: What happens when you access this file via http://localhost:5000/static/foo.html?
+Predictions: We expect this to open a website saying "Is this plaintext, though?"
+Discoveries: Outcome as expected.
