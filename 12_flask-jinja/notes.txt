@@ -1,0 +1,33 @@
+Team MJH: Mark Zhu(Bob the 3rd Jr), Justin Zou(Piggy), Han Zhang(Sirap)
+SoftDev
+K12: ...or The Only Constant is Change?
+2021-10-7
+
+Q0: If you remove render_template, when the function is called in test_tmplt()
+it will not work.
+
+Q1: No, but our best guess would be https://localhost:5000/templates/model_tmplt.html
+
+Q2: The arguments are taken to decide which html file is being loaded and what is being dislayed.
+In the example model_tmplt.html, the input foo becomes the title and the input
+and the input collection has each of its contents displayed on its own line.
+
+Questions:
+Debated between /my_foist_template and /templates/model_tmplt
+
+Predictions:
+Initial link will display "No hablo queso!"
+If accessing https://localhost:5000/templates/model_tmplt.html
+then it will display fooooo as the title and then
+0
+1
+1
+2
+3
+5
+8
+
+Discoveries:
+@app.route gives the route to the url after https://localhost:5000.
+So, https://localhost:5000/my_foist_template is the correct url and our prediction was wrong.
+<title> tag sets the name of the tab(DIFFERENT FROM HEADING)
