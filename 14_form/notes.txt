@@ -1,0 +1,21 @@
+Selective Soup | Justin Zou(Piggy), Wen Hao Dong(Jal Hordan), Roshani Shrestha (Pete)
+SoftDev 
+K14: Form and Function - Notes for app.py
+2021-10-15
+
+-- Predictions and Notes
+The `from flask import request` line, we think that it will allow us to access a form request.
+
+We don't know what exactly will print when we print the app object, but it likely will contain information about the flask app.
+
+The request object likely contains information about the form request from when the user clicks the submit button in a form.
+
+We think that request.args will be a dictionary that contains all of the input values of the form submitted by the user.
+
+In the `disp_loginpage` function, request.args will likely be empty, since the user hasn't submitted anything yet, so printing request.args['username'] will likely result in an error.
+
+We have no idea request.headers does. Maybe it is a list of the form input names.
+
+Once the user presses submit on the root localhost page, they will get redirected to the localhost:5000/auth page.
+
+In the authenticate function, the page will just show "Waaa hooo HAAAH", but in the terminal, when request.args is printed, it will show the username typed by the user from the previous page.
