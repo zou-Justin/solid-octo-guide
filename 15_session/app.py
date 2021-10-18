@@ -11,14 +11,14 @@ app = Flask(__name__)
 
 @app.route("/") #, methods=['GET', 'POST'])
 def disp_loginpage(): 
-    if (request.args['username'] == "Selective Soup" and request.args['Password'] == "hello"):
-        return render_template( 'login.html' ) 
-
+   return render_template( 'login.html' ) 
 
 @app.route("/auth") 
 def authenticate():  
-    pass
-    # return render_template() 
+    if (request.args['username'] == 'Selective Soup' and request.args.get('Password')== 'hello'):
+        return render_template('response.html', username=request.args['username'], password=request.args.get('Password'))
+    else:
+        return render_template('login.html')
    
 
 
