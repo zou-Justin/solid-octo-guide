@@ -1,0 +1,53 @@
+Selective Soup | Justin Zou (Piggy), Wen Hao Dong (Jal Hordan), Roshani Shrestha (Pete)
+SoftDev
+K15: Sessions Greetings
+2021-10-18
+
+-- GET vs POST
+We don't exactly know the difference between GET and POST is.
+
+Looking it up online we saw that POST was used for data submission and
+processing, an example given was an HTML form. However, when we did our
+assignment our method was GET which confuses us.
+
+After some further research, we found the main differences between GET and POST
+are how data is sent to the server and how it affects state.
+
+GET requests have a query string at the end of the URL, in the following format:
+url/to/site?name1=value1&key2=value2
+and GET requests don't have any side effects, meaning no variables should change
+based on the request and the state stays the same.
+
+POST requests on the other hand usually sends data to the server in the request
+body and it isn't saved in the URL. POST request also usually have side effects,
+meaning they can update or create new variables and state may change, which is
+useful for remembering whether a user is currently logged in or not.
+
+sources:
+- https://www.w3schools.com/tags/ref_httpmethods.asp
+- https://stackoverflow.com/questions/504947/when-should-i-use-get-or-post-method-whats-the-difference-between-them
+- https://stackoverflow.com/questions/46585/when-do-you-use-post-and-when-do-you-use-get
+
+-- Dev Console Observations
+When we go to our flask site, the dev console prints the requests it makes to
+the server, much like how the flask console prints the requests it receives.
+
+The request it prints also has a drop down which includes extra information
+like the headers (response and request), cookies, request payload, response, 
+cache information, request timings, and stack trace.
+
+The headers section under a request method has initial information such as its status, the version, and the referrer policy.
+The response headers section includes information about content length, content type, date, and server.
+The request headers section includes information about things such as the connection, host, referer, and user agent.  
+
+Also, the console by default only displays failed requests. To see *all* requests,
+you need to toggle the 'Requests' button at the top right of the console to the left
+of the gear.
+
+After poking around some more and tweaking the K14 assignment to use POST requests,
+a few discoveries were made:
+- The flask app won't accept the request if the decorator (@app.route(...)) didn't
+  have a methods parameter with a list containing 'POST'
+  (@app.route('/auth', methods=['GET', 'POST']).
+- The site works the same as long as you replace all instances of request.args with
+  request.form.
