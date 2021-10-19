@@ -4,7 +4,7 @@
 # 2021-10-15
 
 from sys import argv
-from flask import Flask, render_template, request, session
+from flask import Flask, render_template, request, session, redirect
 
 app = Flask(__name__)
 
@@ -17,8 +17,10 @@ def disp_loginpage():
         else:
             if (request.form['username'] != 'Selective Soup'):
                 return render_template( 'login.html', logged = "Wrong username")
-            else:
+            elif (request.form.get('Password') != 'hello'):
                 return render_template( 'login.html', logged = "Wrong password")
+            else:
+                return render_template( 'login.html', logged = "Wrong username and password")
     if "user" in session:
         return render_template('response.html', username = session['user'])
     else:
@@ -27,9 +29,7 @@ def disp_loginpage():
 @app.route("/logout", methods = ['POST', 'GET'])
 def logoutPg():
     session.pop('user')
-    return render_template('login.html', logged = "You have successfully logged out")
-
-
+    return redirect('http://localhost:5000/')
 
 
 if __name__ == "__main__":
