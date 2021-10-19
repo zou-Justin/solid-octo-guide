@@ -16,9 +16,9 @@ def disp_loginpage():
             session['user'] = request.form['username']
         else:
             if (request.form['username'] != 'Selective Soup'):
-                return render_template( 'login.html', logged = "wrong username")
+                return render_template( 'login.html', logged = "Wrong username")
             else:
-                return render_template( 'login.html', logged = "wrong password")
+                return render_template( 'login.html', logged = "Wrong password")
     if "user" in session:
         return render_template('response.html', username = session['user'])
     else:
