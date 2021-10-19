@@ -14,14 +14,20 @@ def disp_loginpage():
     if (request.method == 'POST'):
         if (request.form['username'] == 'Selective Soup' and request.form.get('Password')== 'hello'):
             session['user'] = request.form['username']
+        else:
+            if (request.form['username'] != 'Selective Soup'):
+                return render_template( 'login.html', logged = "wrong username")
+            else:
+                return render_template( 'login.html', logged = "wrong password")
     if "user" in session:
         return render_template('response.html', username = session['user'])
     else:
-        return render_template( 'login.html' )
+        return render_template( 'login.html', logged = "")
 
 @app.route("/logout", methods = ['POST', 'GET'])
 def logoutPg():
-    return "hi"
+    session.pop('user')
+    return render_template('login.html', logged = "You have successfully logged out")
 
 
 
