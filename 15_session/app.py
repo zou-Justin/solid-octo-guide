@@ -15,16 +15,13 @@ def disp_loginpage():
         if (request.form['username'] == 'Selective Soup' and request.form.get('Password')== 'hello'):
             session['user'] = request.form['username']
     if "user" in session:
-        return "logged in"
+        return render_template('response.html', username = session['user'])
     else:
         return render_template( 'login.html' )
 
-
-def authenticate():
-    if (request.args['username'] == 'Selective Soup' and request.args.get('Password')== 'hello'):
-        return render_template('response.html', username=request.args['username'], password=request.args.get('Password'))
-    else:
-        return render_template('login.html')
+@app.route("/logout", methods = ['POST', 'GET'])
+def logoutPg():
+    return "hi"
 
 
 
