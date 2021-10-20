@@ -1,6 +1,6 @@
 Selective Soup | Justin Zou (Piggy), Wen Hao Dong (Jal Hordan), Roshani Shrestha (Pete)
 SoftDev
-K15: Sessions Greetings
+K15: Sessions Greetings - Notes
 2021-10-18
 
 -- GET vs POST
