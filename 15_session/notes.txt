@@ -51,3 +51,8 @@ a few discoveries were made:
   (@app.route('/auth', methods=['GET', 'POST']).
 - The site works the same as long as you replace all instances of request.args with
   request.form.
+
+After reviewing the flask apps of the other trios:
+- One trio displayed the error messages in red font, which improves readability on the page.
+- A trio used a separate function and route "/auth" to check the username and password.
+- Most trios had programs similar to ours. 
