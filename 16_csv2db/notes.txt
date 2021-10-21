@@ -147,11 +147,29 @@ NOTES:
 Questions:
 What does ".header on|off" do? What do the different modes indicate?
 
+Answer: We learned today in class that .header on|off showed the name of the columns above.
+
 Comments:
-When running stubby.py, "foo" is created as a db. 
+Each command when ran in the SQLITE shell needs to end with a semicolon.
+When running stubby.py, "foo" is created as a db.
+The name for the database could be anything, not necessarily "foo".
 After entering ".tables" in the SQLite shell, "roster" or the name of the table is printed out.
+We can use a variety of options to add values into the table
+INSERT INTO table_name VALUES (value1,value2...);
+We can also use SET column1 = value1, WHERE condition1.
+We can delete values from tables useing DELETE FROM <table> WHERE <condition>
+
 After looking up ".mode" online, the different modes seem to indicate output types.
+Something to note about the .mode column is that if the value is too long, then it would become cutoff.
+There are many data types such as TEXT, INTEGER, REAL, NUMERIC, BLOB.
+We found that the difference between REAL and NUMERIC was the fact that NUMERIC seems to have more precise decimals than REAL. 
+BLOB is something that means no suggested type and NULL can be used at anytime.
+
+
 ".help" provides a lengthy list of SQLite shell commands.
+
+
 
 Concerns:
 SELECT * FROM doesn't seem to work in the SQLite shell, but we're not sure why.
+Update: It does work, think we forgot the table name or the semicolon.
