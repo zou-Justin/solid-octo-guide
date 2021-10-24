@@ -1,3 +1,8 @@
+# Selective Soup | Justin Zou (Piggy), Wen Hao Dong (Jal Hordan), Roshani Shrestha (Pete)
+# SoftDev 
+# K16: All About Database - SQLITE3 BASICS, notes
+# 2021-10-25
+
 Relational database
  
 DB that stores information as a collection of tables.
@@ -157,16 +162,21 @@ After entering ".tables" in the SQLite shell, "roster" or the name of the table 
 We can use a variety of options to add values into the table
 INSERT INTO table_name VALUES (value1,value2...);
 We can also use SET column1 = value1, WHERE condition1.
-We can delete values from tables useing DELETE FROM <table> WHERE <condition>
+We can delete values from tables using DELETE FROM <table> WHERE <condition>
+We can delete the whole table using DROP TABLE <table>
+We can change the width of the table's columns with .width NUM1 NUM2 ... 
 
 After looking up ".mode" online, the different modes seem to indicate output types.
-Something to note about the .mode column is that if the value is too long, then it would become cutoff.
+Something to note about the .mode column is that if the value is too long, then it would become cut off.
 There are many data types such as TEXT, INTEGER, REAL, NUMERIC, BLOB.
 We found that the difference between REAL and NUMERIC was the fact that NUMERIC seems to have more precise decimals than REAL. 
 BLOB is something that means no suggested type and NULL can be used at anytime.
 
 
 ".help" provides a lengthy list of SQLite shell commands.
+
+f-strings can be used instead of string concatenation to make the code cleaner.
+repr(str) adds quotes around the string str
 
 
 
