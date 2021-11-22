@@ -1,0 +1,22 @@
+Selective Soup | Justin Zou (Piggy), Wen Hao Dong (Jal Hordan), Roshani Shrestha (Pete)
+SoftDev 
+K17: Notes About Other Trios' Code for K16
+2021-10-26
+Time spent: 15 minutes
+
+NOTES:
+
+Some trios used c.fetchall() as a way to access all of the data in the database. 
+They used this in a print statement to check the content of their tables.
+
+A lot of trios used INSERT INTO <table> VALUES(?, ?, ?) along with c.execute(command, <value1>, <value2>, <value3>)
+to insert certain values in each column more efficiently. Instead of using separate values as arguments, one trio used 
+an array of values as an argument. Besides efficiency, these methods also improved readability in the code. 
+
+Some trios made functions for the overall process of reading a file and making a table. They then called the functions
+for each csv file. 
+
+Many trios cleared the table each time if it existed. There were also trios who used IF NOT EXISTS to check if the table
+existed before creating it. 
+
+We also learned that backslashes can divide up long chunks of code into several lines.
