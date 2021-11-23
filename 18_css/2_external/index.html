@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Justin Zou(Piggy), Hebe Huang(Umbreon)
-     SoftDev pd0
-     K18 -- CSS basics
-     2021-11-22t
-
- WORK FILE for CSS
+<!-- Justin Zou (Piggy), Hebe Huang (Umbreon)
+    SoftDev pd0
+    K18 -- CSS basics
+    2021-11-22
+    Lorem ipsum generator used: https://loremipsum.io/
+    External Style Sheet format:
+        <head> 
+          <link rel="style.css"
+                type="text/css"
+                href="STYLE FILE">
+        </head>
+        (CSS STUFF in a file named "style.css")
+    Pros: CSS (styling) and HTML (basic formatting/content) are in separate files
+    Cons: May have to switch between multiple files for CSS and HTML
+  WORK FILE for CSS
   -->
 
   <head>
@@ -15,17 +24,17 @@
   </head>
 
   <body>
+    <div class = "contents"> <!-- main content of page, minus background. Overflow:hidden keeps the two cols on separate sides of page -->
     <h1>foo heading 1</h1>
-    <div class = "heading">
       <div class = "col">
     <h3>nav foo</h3>
-    <ul>
+    <ul> <!-- navebar on the left -->
       <li><a href="">dis</a></li>
       <li><a href="">dat</a></li>
       <li><a href="">de udda ting</a></li>
     </ul>
   </div>
-    <div class = "col2">
+    <div class = "col2"> <!-- content on the right -->
     <h2>main foo heading</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
