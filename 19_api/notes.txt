@@ -4,4 +4,5 @@ K19: A RESTful Journey Skyward
 2021-11-23
 
 Notes:
-After creating an API key, everyone gets the same image and JSON from NASA
+After creating an API key, everyone gets the same image and JSON file content from NASA
+You can't simply put in the image url for the image source for the HTML
