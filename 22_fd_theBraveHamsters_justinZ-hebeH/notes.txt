@@ -11,3 +11,6 @@ Foundation Notes:
     - This is also the preferred method
 - Foundation prioritizes mobile users
   - you code for small screens first and larger screens automatically inherit these aspects and you can customize them if needed
+- Foundation has powerful layout assets
+  - Its new powerful grid system is the XY-grid
+- Compared to previous iterations, Foundation is much faster (50%) and more condensed.
