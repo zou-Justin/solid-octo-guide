@@ -12,5 +12,7 @@ Foundation Notes:
 - Foundation prioritizes mobile users
   - you code for small screens first and larger screens automatically inherit these aspects and you can customize them if needed
 - Foundation has powerful layout assets
-  - Its new powerful grid system is the XY-grid
+  - Its new powerful grid system is the XY-grid that combines old legacy systems in a much cleaner ways
+  - It also has a powerful form layout
+- Like other frontend framework, it uses ids and classes in order to call the CSS
 - Compared to previous iterations, Foundation is much faster (50%) and more condensed.
