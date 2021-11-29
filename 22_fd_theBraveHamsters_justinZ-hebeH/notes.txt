@@ -1,0 +1,13 @@
+The Brave Hamsters: Justin Zou, Hebe Huang
+SoftDev
+K22: Who Does Frame Work For?
+2021-11-29
+
+Foundation Notes:
+- There are 3 ways to use Foundation:
+  - We can install it with a package manager that already has the compiled CSS and JavaScript as well as the source files.
+  - We can also install it with something called Foundation CLI, and then creating a new project with foundation keyword
+  - We can also simply link the online CDN Links and get the online CSS for it
+    - This is also the preferred method
+- Foundation prioritizes mobile users
+  - you code for small screens first and larger screens automatically inherit these aspects and you can customize them if needed
