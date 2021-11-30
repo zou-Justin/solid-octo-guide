@@ -16,3 +16,5 @@ Foundation Notes:
   - It also has a powerful form layout
 - Like other frontend framework, it uses ids and classes in order to call the CSS
 - Compared to previous iterations, Foundation is much faster (50%) and more condensed.
+- Foundation has built-in mixins
+  Ex:@include xy-cell-size($size, $gutters, $gutter-type, $breakpoint, $vertical);
