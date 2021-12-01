@@ -40,7 +40,35 @@ K22: Who Does Frame Work For?
     </div>
     <div class="grid-y">
       <p>Nullam vestibulum lorem nec lectus egestas, nec ullamcorper diam maximus. Maecenas condimentum, nibh at blandit semper, ex erat tempus magna, id maximus neque velit accumsan nibh. Aenean dignissim lorem eu nisl laoreet vestibulum. Vivamus efficitur et augue vitae tincidunt. Etiam et magna felis. Integer mattis, nisi aliquet scelerisque blandit, ex mi sodales ante, eget accumsan quam magna et ligula. Curabitur id tristique leo. Proin rutrum mi vitae enim rhoncus, at cursus neque eleifend. Integer ultrices volutpat tellus ac porta. Fusce sollicitudin venenatis lacinia. Fusce ante lorem, gravida semper varius non, pharetra non erat. Sed dapibus arcu turpis, ac sollicitudin nibh lacinia vel. Nullam at enim porta, luctus metus sit amet, rutrum odio. Cras tempor enim vel pellentesque sollicitudin. Maecenas ullamcorper, sem non accumsan volutpat, neque tortor pulvinar orci, ut ultrices ligula lorem ut risus.</p>
+    </div>
+
+    <h1>Grid Containers</h1>
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x">
+        <div class="cell small-4">This is an example of a grid container</div>
+          <div class="cell small-4">XY grids defaultly take up the full width of its space,</div>
+          <div class="cell small-4">but grid containers are centered horizontally</div>
+        </div>
+    </div>
+    <br>
+    <div class="grid-container fluid">
+        <div class="grid-x grid-margin-x">
+          <div class="cell small-4">This is an example of a fluid grid container</div>
+          <div class="cell small-4">These take stretch the full width of its space</div>
+          <div class="cell small-4">:)</div>
+        </div>
+    </div>
+    <br>
+    <div class="grid-container full">
+        <div class="grid-x grid-margin-x">
+          <div class="cell small-4">This is an example of a fluid grid container</div>
+          <div class="cell small-4">These stretch content to full width and remove padding</div>
+          <div class="cell small-4">:))</div>
+        </div>
       </div>
+      <br>
+
+
     <h1>Cool Buttons</h1>
     <!-- The primary, secondary classes give it the default colors, alert automatically makes it red, success makes it green -->
     <a href="#features" class="button success">Next Page</a>
@@ -67,11 +95,46 @@ K22: Who Does Frame Work For?
     <p class="badge success">3</p>
     <p class="badge alert">7</p>
     <!-- The paragraph tag could be changed into anything -->
+
+`   <br>
+    <h1>Cool Resizing Stuff</h1>
+    <div class="grid-x grid-margin-x">
+        <div class="cell shrink" style="background-color: antiquewhite;">"shrink" lets the element take up minimal space</div>
+        <div class="cell auto" style="background-color: aqua;">"auto" lets the element take up all remaining space</div>
+        <div class="cell auto" style="background-color: antiquewhite;">Multiple "auto"s share space equally</div>
+        <div class="cell auto" style="background-color: aqua;">!!</div>
+    </div><br><br>
+    <div class="grid-x grid-margin-x">
+        <div class="cell large-shrink">Example of [size]-auto and [size]-shrink</div>
+        <div class="cell large-shrink">Whether elements are stacked or next to each other</div>
+        <div class="cell large-shrink">depend on screen size. Good for menus</div>
+    </div><br><br>
+    <p>Dynamic grid formatting example:</p>
+    <div class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-4" style="text-align: center;">
+        <div class="cell">
+            <h3>:></h3>
+        </div>
+        <div class="cell">
+            <h3>:></h3>
+        </div>
+        <div class="cell">
+            <h3>:></h3>
+        </div>
+        <div class="cell">
+            <h3>:></h3>
+        </div>
+        <div class="cell">
+            <h3>:></h3>
+        </div>
+        <div class="cell">
+            <h3>:></h3>
+        </div>
+    </div>
+
     <div class="cell shrink footer" style="background-color: gold">
       <h3>The Brave Hamsters Footer</h3>
     </div>
     
-   
   </body>
 
 </html>
