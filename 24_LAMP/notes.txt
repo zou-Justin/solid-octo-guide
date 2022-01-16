@@ -5,5 +5,8 @@ K24 -- Cold LAMPin w Flav
 
 - Need a credit card before getting into Digital Ocean
 - Sudo command is invariably useful for installing packages 
+- Sudo is only usable after sshing into the server/ip address in the first place
+
+
 
 https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04
