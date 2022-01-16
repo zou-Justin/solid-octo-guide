@@ -8,7 +8,7 @@ Guide to creating an ubuntu 20.04 virtual machine ("droplet") and installing Apa
 ### Prerequisites:
 
 - You will need to have a Digital Ocean Account (Credit Card Needed)
-- 
+- You will need a SSH key if you don't want to use a password
 Creating a Droplet
 1. First to create your droplet, choose all of the cheapest options and Ubuntu as your OS
 2. Choose NYC as your Server
@@ -29,6 +29,8 @@ Accessing the server and installing
     adduser Name
     ```
 3. Once you create your password you can then use  ```su Name``` to switch to the user and start using sudo commands to install packages.
+4. You can follow the step of [here](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04) for how to install each package
+
 
 ### Resources
 * https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04
