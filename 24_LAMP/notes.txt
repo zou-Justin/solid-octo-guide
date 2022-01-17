@@ -6,7 +6,9 @@ K24 -- Cold LAMPin w Flav
 - Need a credit card before getting into Digital Ocean
 - Sudo command is invariably useful for installing packages 
 - Sudo is only usable after sshing into the server/ip address in the first place
-
-
-
-https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04
+    - You can use the su command to switch users
+- You can reuse your previous ssh keys with the command cat ~/.ssh/id_rsa.pub
+    - Then you can copy and paste this into your droplet
+- If you have a problem sshing in as a user, you need to open up the sshd config file and change password config to yes
+- You have to allow the firewall to let your apache install go through
+- Can access your site with your server ip and pasting it in the web browser.
