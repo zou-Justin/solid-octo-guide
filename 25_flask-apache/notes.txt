@@ -1,0 +1,17 @@
+Justin Zou
+SoftDev
+K25 -- Apache, Jump On It
+1/19/2021
+
+Notes
+- Each IP address can only be used for one singular site
+- The Config file helps determine what directories should be put on your IP address
+    - In the example from the resources, it seems that you don't necessarily need to have the part pertaining to using the static directory
+- 'service apache2 restart' and restarting apache is similar to saving the file 
+    - If you change the python file, you have to save it again using this command
+- You need to have the command 
+"if __name__ == "__main__":
+    app.run()
+You can't simply just have app.run() otherwise it won't work properly
+- I assume in the config file when adding more directories you would use the alias and <Directory> tags
+
