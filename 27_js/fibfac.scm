@@ -1,4 +1,7 @@
-
+Team Tofu :: Justin Zou(Piggy), Annabel Zhang(Mang)
+Softdev Pd2
+K27 -- Basic functions in JavaScript
+2022-02-03r
 
 
 (define fact

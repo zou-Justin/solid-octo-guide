@@ -1,18 +1,15 @@
-Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
-SoftDev pd0
+Team Tofu :: Justin Zou(Piggy), Annabel Zhang(Mang)
+Softdev Pd2
 K27 -- Basic functions in JavaScript
 2022-02-03r
 
-DISCO
------------------------------------------------------------------
-* Ooooh, ___
-* Aaah-haa!  ____...
-=================================================================
+Disco:
+- The JavaScript code is basically the exact same logic as the Scheme 
+- You use Function in order to declare functions in JavaScript
+- You can use the console and type in the function name in order to call it
 
-QCC
------------------------------------------------------------------
-* Why...?
-* Huh?
-* Whuh now?
-=================================================================
+
+QCC:
+-
+
 
