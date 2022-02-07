@@ -10,6 +10,6 @@ Disco:
 
 
 QCC:
--
+- Is there a main function as in Java to call the functions or can you just call it like in Scheme?
 
 
