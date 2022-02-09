@@ -1,0 +1,14 @@
+ Team Tofu: Justin Zou, Annabel Zhang, Jessie Xie
+ SoftDev pd2
+ K28 -- Manipulating the DOM
+ 2022-02-08t
+
+ Notes: 
+ - Objects are declared in JavaScript with a bunch of dictionaries
+    - You can call the items you created in each object
+    - You can create functions inside the dictionaries and even call items
+        - I believe this is possible since you can set variables as functions in JavaScript
+- You can set variables as functions or declare functions normally
+    - ex: function f(x) vs var f = function(x)
+- With document.getElementsByTagName you get all elements as an array that have the tag name you inputted
+- var keyword allows for automatic typecast

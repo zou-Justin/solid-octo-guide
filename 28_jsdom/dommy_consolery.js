@@ -1,22 +1,3 @@
-/*
-   your PPTASK:
-   
-   Test drive each bit of code in this file,
-    and insert comments galore, indicating anything
-     you discover,
-    	have questions about,
-    		or otherwise deem notable.
-    		
-    		Write with your future self or teammates in mind.
-    		
-    		If you find yourself falling out of flow mode, consult 
-    		other teams
-    		MDN
-
-   A few comments have been pre-filled for you...
-   
-   (delete this block comment once you are done)
-*/
 // Team Tofu: Justin Zou, Annabel Zhang, Jessie Xie
 // SoftDev pd2
 // K28 -- Manipulating the DOM
@@ -28,12 +9,13 @@
 //(Ctrl-Shift-K in Firefox to reveal console)
 console.log("AYO");
 
+// i and j are now these values when you type them in the console
 var i = "hello";
 var j = 20;
 
 
 //assign an anonymous fxn to a var
-// In the console you would call it by name f(x)
+// In the console you would call it by name f(x) so f(20) returns 50
 // Question: why would do we have to have to assign a variable to the function instead of simply doing function f(x)
 var f = function(x) {
   var j=30;
@@ -44,6 +26,7 @@ var f = function(x) {
 //instantiate an object
 // Object declaration is a dictionary
 // You can call the functions within this dictionary with something like 0["func"](2)
+// Can see the contents of the value with the key
 var o = { 'name' : 'Thluffy',
           age : 15,
           items : [10, 20, 30, 40],
@@ -55,7 +38,7 @@ var o = { 'name' : 'Thluffy',
 
 // adds an item to the list
 // document.createElement creates the html tag that is given in the parameter
-// What is innerHTML
+// Innerhtml seems to be what the list states
 var addItem = function(text) {
   var list = document.getElementById("thelist");
   var newitem = document.createElement("li");
@@ -63,7 +46,7 @@ var addItem = function(text) {
   list.appendChild(newitem);
 };
 
-
+// This simply removes one of the items on the list.
 var removeItem = function(n) {
   var listitems = document.getElementsByTagName('li');
   listitems[n].remove();
@@ -80,7 +63,7 @@ var red = function() {
   }
 };
 
-
+// This makes all of the elements without a class tag alternate between red and blue
 var stripe = function() {
   var items = document.getElementsByTagName("li");
   for(var i = 0; i < items.length; i++) {
@@ -92,7 +75,29 @@ var stripe = function() {
   }
 };
 
-//insert your implementations here for...
-// FIB
-// FAC
-// GCD
+addItem(fib(12) + " is the Fib sequence for 12")
+addItem(fact(7) + " is 7 factorial")
+addItem(gcd(12,18) + " is the gcd of 12 and 18")
+function fib(n){
+  if (n <= 1)
+    return n
+  return (fib(n-1) + fib(n-2))
+ }
+
+function fact(n){
+  if (n == 0)
+    return 1
+  return n * fact(n-1)
+}
+
+function gcd(a,b){
+  if (a > b)
+    s = b
+  else
+    s = a
+  for (let i = 1; i < s; i++){
+    if (a%i == 0 && b%i == 0)
+      gcd = i
+  }
+  return gcd
+}
