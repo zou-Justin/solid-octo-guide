@@ -75,9 +75,26 @@ var stripe = function() {
   }
 };
 
-addItem(fib(12) + " is the Fib sequence for 12")
-addItem(fact(7) + " is 7 factorial")
-addItem(gcd(12,18) + " is the gcd of 12 and 18")
+
+appendchild
+//document.createElement()
+//setAttribute
+//getAttribute
+//ellement.remove()
+//element.appendchild
+//element.addEventListener
+
+// var buttonFunction = function() { 
+//   var bt =  document.createElement("button");
+// };
+//team dodo
+
+function buttonFunction(){
+  var bt = document.createElement("button");
+}
+
+
+
 function fib(n){
   if (n <= 1)
     return n
