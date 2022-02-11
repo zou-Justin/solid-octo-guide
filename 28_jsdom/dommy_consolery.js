@@ -76,13 +76,7 @@ var stripe = function() {
 };
 
 
-appendchild
-//document.createElement()
-//setAttribute
-//getAttribute
-//ellement.remove()
-//element.appendchild
-//element.addEventListener
+
 
 // var buttonFunction = function() { 
 //   var bt =  document.createElement("button");
