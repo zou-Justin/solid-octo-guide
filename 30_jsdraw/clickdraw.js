@@ -5,62 +5,77 @@
 // --------------------------------------------------
 
 
- var c = document.getElementById("slate");
+var c = document.getElementById('slate');
 
- var ctx = c.getContext("2d");
+//instantiate a CanvasRenderingContext2D object
+var ctx = c.getContext("2d")
 
- var mode = "rect";
+//init global state var
+var mode = "rect";
 
- var toggleMode = (e) => {
-  //  console.log("toggling");
-   if (btT.innerHTML == "rect|circ"){
-     btT.innerHTML = "rect"
-   }
-   else if (btT.innerHTML == "rect"){
-      btT.innerHTML = "circ"
-   }
-   else{
-      btT.innerHTML = "rect"
-   }
- }
- 
- var drawRect = function(e){
-    var mouseX = e.clientX;
-    var mouseY = e.clientY;
-    ctx.fillRect(mouseX, mouseY, 100, 100);
- }
+// var toggleMode = function(e) {
+// false = rect | true = circle
+var toggleMode = (e) => {
+  console.log("toggling.. ");
+  var check = document.getElementById('buttonToggle');
+  // window.alert(check);
+  if (mode ==="rect"){
+    mode = "circ"
+    check.innerText = "circle"
+    console.log("toggled true(circle) successfully")
+  }
+  else {
+    mode = "rect"
+    check.innerText = "rect"
+    console.log("toggled false(rect) successfully")
+  }
+}
 
- var drawCircle = (e) => {
-   var mouseX = e.clientX;
-   var mouseY = e.clientY;
-   ctx.beginPath();
-   ctx.arc(mouseX,mouseY,100,0, 2 * Math.PI);
-   ctx.stroke();
-   ctx.fill();
- }
- 
- var wipeCanvas = () => {
-   ctx.clearRect(0, 0, c.width, c.height);
+// c.addEventListener('click', drawRect()){
+//   if
+//   document.getElementById("slate")
+// }
 
- }
+var drawRect = function(e) {
+  var mouseX = e.offsetX
+  var mouseY = e.offsetY
+  console.log("mouseclick registered at ", mouseX, mouseY);
 
- var draw = (e) => {
-  
-   if (c.getContext) {
-     if (btT.innerHTML == "rect"){
-        drawRect(e);
-     }
-     else if (btT.innerHTML == "circ"){
-        drawCircle(e);
-     }
-     
-   }
+  ctx.beginPath();
+  ctx.rect(mouseX, mouseY, 50, 100);
+  ctx.fillStyle = "pink";
+  ctx.fill();
+}
 
- }
+// var drawircle = function(e) {
+var drawCircle = (e) => {
+  var mouseX = e.offsetX
+  var mouseY = e.offsetY
+  console.log ("mouseclick registered at ", mouseX, mouseY);
 
-c.addEventListener("click",draw);
-var btT = document.getElementById("buttonToggle");
-btT.addEventListener('click', toggleMode);
-var clearBt = document.getElementById("buttonClear");
-clearBt.addEventListener('click', wipeCanvas);
- toggleMode();
+  ctx.beginPath();
+  ctx.arc(mouseX, mouseY, 50, 0, 360);
+  ctx.fillStyle = "red";
+  ctx.fill();
+}
+
+// var draw = function(e) {
+var draw = (e) => {
+  if (mode === "rect") {
+    drawRect(e);
+  }
+  else {
+    drawCircle(e);
+  }
+}
+
+// var wipeCanvas = function() {
+var wipeCanvas = () => {
+  ctx.clearRect(0, 0, c.clientWidth, c.clientHeight);
+}
+
+c.addEventListener("click", draw);
+var bToggler = document.getElementById('buttonToggle');
+bToggler.addEventListener("click", toggleMode);
+var clearB = document.getElementById('buttonClear');
+clearB.addEventListener("click", wipeCanvas);
