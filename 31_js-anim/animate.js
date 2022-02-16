@@ -40,22 +40,27 @@ var growing = true;
 var drawDot = () => {
   console.log("drawDot invoked...")
   console.log(radius);
-  ctx.beginPath();
-  ctx.arc(c.clientWidth/2, c.clientHeight/2, radius, 0, 360);
-  ctx.fill();
-  if (radius > 250){
-    growing = false;
-  }
-  else if (radius <= 0){
-    growing = true;
-  }
   if (growing){
-    radius+=1;
+    radius +=1;
   }
   else{
     radius-=1;
   }
 
+  if (radius == c.clientWidth/2){
+    growing = false;
+  }
+  else if (radius <= 0){
+    growing = true;
+  }
+  clear();
+  ctx.beginPath();
+  ctx.arc(c.clientWidth/2, c.clientHeight/2, radius, 0, 360);
+  ctx.fill();
+ 
+  if (requestID){
+    window.cancelAnimationFrame(requestID);
+  }
   requestID = window.requestAnimationFrame(drawDot);
 
   // YOUR CODE HERE

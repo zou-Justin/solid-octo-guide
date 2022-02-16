@@ -1,0 +1,8 @@
+Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
+SoftDev pd0
+K31 -- canvas based JS animation
+2022-02-15t
+
+
+Notes;
+- You can use requestId to check whether or not an animation is running already and whether or n
