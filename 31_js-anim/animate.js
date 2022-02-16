@@ -43,7 +43,19 @@ var drawDot = () => {
   ctx.beginPath();
   ctx.arc(c.clientWidth/2, c.clientHeight/2, radius, 0, 360);
   ctx.fill();
-  radius+=1;
+  if (radius > 250){
+    growing = false;
+  }
+  else if (radius <= 0){
+    growing = true;
+  }
+  if (growing){
+    radius+=1;
+  }
+  else{
+    radius-=1;
+  }
+
   requestID = window.requestAnimationFrame(drawDot);
 
   // YOUR CODE HERE
