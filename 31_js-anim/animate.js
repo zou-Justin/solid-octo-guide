@@ -28,7 +28,6 @@ var requestID;  //init global var for use with animation frames
 var clear = (e) => {
   console.log("clear invoked...")
   ctx.clearRect(0, 0, c.clientWidth, c.clientHeight);
-  // YOUR CODE HERE
 };
 
 
@@ -97,5 +96,5 @@ var stopIt = () => {
 };
 
 
-dotButton.addEventListener( "click", drawDot );
-stopButton.addEventListener( "click",  stopIt );
+dotButton.addEventListener("click", drawDot );
+stopButton.addEventListener("click",  stopIt );

@@ -5,4 +5,7 @@ K31 -- canvas based JS animation
 
 
 Notes;
-- You can use requestId to check whether or not an animation is running already and whether or n
+- You can use requestId to check whether or not an animation is running already
+- requestId becomes the animation id 
+- You need beginPath and fill for animation to happen
+- The parameters for the start and cancel animation are the functions/animations that are occuring 
