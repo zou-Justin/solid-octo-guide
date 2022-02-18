@@ -1,0 +1,8 @@
+Annabel Zhang, Justin Zou :: Team Tofu
+SoftDev pd2
+K32 -- More Moving Parts
+2022-02-17
+
+
+Notes:
+Using ctx.translate would cause the dot animation to change as well so there would be more implementation needed.
