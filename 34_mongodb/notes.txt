@@ -1,0 +1,41 @@
+Justin Zou
+Softdev
+K34: Another DB Perspective
+2022-04-27
+
+Notes:
+- When modeling for Tabular Databases, the first typical step is to define the Schema, but this is a problem because this forces you to have one correct solution that quickly become obsolete later on.
+- This causes the data to dictate how the application is built which does not take in user inputs/ optimizations and this would lead to a drop in performance everytime you want to restructure or change something.
+
+Mongo DB Data Modeling:
+- You would develop the application first -> then develop the data model _> now you can improve your application which also allows you to improve your data model which is possible with MongoDB.
+- You can do whatever you want without constraints.
+- You would design multiple times in the application lifetime
+
+The Methodology for improving application and data model:
+- Look at the current workload that your application needs to handle -> gives you a clear list of priorities and how much space you need (data size)
+- Map out everything and the elements relationships with each other
+    -What can be linked?
+        - One to One
+            - Either side can track the other element, they are inherently related to each other
+            - You can embed the data if it is one to one
+        - One to Many
+            - You can create an array in the parent class for the one to many approach
+            - Otherwise you can have a Scalar in Child which can be something like an id that is unique for each child
+        - Many to Many
+            - Arrays on either side
+    - Embed is having everything accessible in the collection while link is referenceing a separate collection for more information.
+- Finalize the data model for the collections you are using
+    - Schema Versioning Pattern
+        - This helps you divide the schemas you are using if they contain different information based on changes over time.
+    - Bucket Pattern
+        - This allows us to sort data points and documents as they go in and enables the computed Pattern
+        - Allows for good grouping for small related data
+        - reduces index sizes and speed
+    - Computed Pattern  
+        - Allows for fast retreival, increases the values during writing so it can be easily read.
+        - Compute on write is better than compute on read
+- Lots of more patterns able to be found on MongoDB and all of its links
+- It is important to figure out all of the information available to us.
+    - We want to be able to see what is the big issues we focus on and what indexes we want to use.
+- Simpler data model for small teams and performant ones for big teams.
