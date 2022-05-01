@@ -1,0 +1,9 @@
+Justin Zou
+Softdev
+K35: Another DB Perspective
+2022-05-03
+
+
+Notes:
+- MongoDb is a NoSql Document database which means that they store data in containers similar to JSON objects
+- 
