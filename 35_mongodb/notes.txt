@@ -6,6 +6,9 @@ K35: Another DB Perspective
 
 Notes:
 - MongoDb is a NoSql Document database which means that they store data in containers similar to JSON objects
+- Document stores data in Field Value pairs
+    - Field is a unique identifier for a datapoint
+    - Value is data related the given Field.
 - Atlas is the cloud Database with MongoDb at the core of Atlas.
 - Atlas will help us deploy our database in the cloud
 - Atlas deploys clusters(groups of services that store data)
