@@ -1,0 +1,37 @@
+Justin Zou
+Softdev
+K36: Another DB Perspective
+2022-05-03
+
+Notes:
+- When we view data in MongoDb we are viewing it in the form of JSON.
+- JSON Format:
+    - Start and end with {}
+    - Separate key and value with colon
+    - Spearate key:value pair with a comma
+    - Keys are surrounded by quotes and are called fields in MongoDb
+-Pros and cons of using JSON
+    Pros:
+    - JSON is easy to read 
+    Cons:
+    - Text based
+    - Takes up lots of space
+    - Limited in how much it can store
+- MongoDb stores JSON in BSON format which is binary JSON which was optimized for speed and size. It is a combination of binary and JSON
+- MongoDb stores BSON and viewed as JSON
+- Export in BSON if you don't plan to view it after otherwise export in JSON
+
+JSON CMD:
+mongoimport
+mongoexport
+
+BSON CMD:
+mongorestore
+mongodump
+
+We use a URI string to use each of these commands which is also known as a Uniform Resource Identifier
+Example: mongodump --uri "mongodb+srv://<your username>:<your password>@<your cluster>.mongodb.net/sample_supplies"
+
+Connect to MongoDb before using the commands shown here. Default database is admin which keeps track of existing users.
+"show dbs"
+The find command helps us do the same thing as the Atlas UI, it helps us find all objects with the specified field and value pair.
