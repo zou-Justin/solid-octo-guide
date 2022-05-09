@@ -1,0 +1,28 @@
+Justin Zou
+Softdev
+K37: Another DB Perspective
+2022-05-09
+
+Notes:
+- You can insert new documents into MongoDB with both Atlas UI and terminal
+    - Every document in MongoDb needs to have a unique underscore ID
+        - Thye can be identical in every otherway as long as ids are different
+    - You get errors otherwise
+- findOne() function finds a random document in the 
+- Insert() allows us to insert a new document into the collection list
+- You can insert multiple documents by using an array
+- Only the first document with the same id gets inserted and then a duplicate error will occur
+- Ordered tag, if it is true, the database halts at the first duplicate, if it is false then every unique id gets inserted
+- if you insert document into collection that doesn't exist, it will create it automatically
+- if you insert a document without an id, it will be created automatically
+- We can easily update the documents in our mongoDb database
+    - updateOne() and updateMany()
+        - updateOne is same as findOne which returns the first document that applies to the query
+        - updateMany returns all that applies to the given query
+        - It takes in two parameters, one is the filter and the other is what is being updated
+            - $inc updates the field by that increment so its a plus not a equal
+            - $set updates the field by setting it to that amount
+    -deleteOne() and deleteMany()
+        - deleteOne() is delete the first document wiht the given parameters
+        - deleteMany() is delete all documents
+        - We delete by the underscore id
