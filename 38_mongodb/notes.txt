@@ -7,3 +7,16 @@ K38: Another DB Perspective
 Notes:
 - The dollar sign is used for multiple operators in mongodb
 Query Operators
+    - $eq
+    - $gt
+    - $gte
+    - $ne
+    - $lt
+    - $lte
+    - { <field>: { <operator>: <value> }}
+Logic Operators
+    - $and 
+    - $or
+    - $nor - fail for both
+    - $not
+    - it goes { <field>: { <operator>: [{statement1},{statement2},... ]}}
