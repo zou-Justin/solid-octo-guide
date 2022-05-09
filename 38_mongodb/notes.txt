@@ -1,0 +1,9 @@
+Justin Zou
+Softdev
+K38: Another DB Perspective
+2022-05-09
+
+
+Notes:
+- The dollar sign is used for multiple operators in mongodb
+Query Operators
