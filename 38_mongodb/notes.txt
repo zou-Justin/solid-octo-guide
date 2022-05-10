@@ -20,3 +20,20 @@ Logic Operators
     - $nor - fail for both
     - $not
     - it goes { <field>: { <operator>: [{statement1},{statement2},... ]}}
+You can combine operators together with $and and $gt and $lt
+
+$expr allows us to use variables, conditionals and aggregation expression
+    -you can compare lets say start station id with end station id which is very useful
+You use $ next to a field to signify you are looking at the value of that field
+Array operators
+    - $all - all given fields
+    - $size - all arrays with that size
+    -$push
+        - add an element into an array
+        - turns field into an array field
+We can use projection to only look at the fields that we were looking at
+    - 1 includes the field
+    - 0 excludes the field
+    - db.collection.find({query}, {projection})
+    - $elemMatch matches wit an array field that matches this output
+MongoDB uses dotnotation in order to find nested documents or position of array
