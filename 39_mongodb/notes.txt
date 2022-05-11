@@ -1,0 +1,13 @@
+Justin Zou
+Softdev
+K39: Another DB Perspective
+2022-05-11
+
+
+Aggregation Framework
+- An Aggregation Framework is a way to query data in mongodb
+- instead of .find we would use .aggregate
+- this allows us to put things in an array and to more operations than simply filtering things
+- $match is a filter and $project is a finer filter
+- it lets us to do amazing things in mongodb
+- $group can put it into multiple smaller group reserves
