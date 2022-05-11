@@ -11,3 +11,14 @@ Aggregation Framework
 - $match is a filter and $project is a finer filter
 - it lets us to do amazing things in mongodb
 - $group can put it into multiple smaller group reserves
+- Aggregation Framework has the sky as its limit anything is possible here.
+- $sort increasing order cursor.sort()
+- mongodb always makes it so you sort first then you use limit to get the most amount of documents as possible,
+- indexes are useful and we can create them with createIndex()
+- data modeling is the way to optimize your organization of fields and documents in the database
+- Rule: Data is stored in the way it is used
+- Upsert is a more complex way to update data
+    - hybrid of update and insert
+    - it will update if the document is matched and insert if it is not matched
+    - use only when needed
+
