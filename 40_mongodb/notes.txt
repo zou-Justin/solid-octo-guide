@@ -1,0 +1,13 @@
+Justin Zou
+Softdev
+K40: Another DB Perspective
+2022-05-12
+
+
+Notes
+- The atlas has lots of features that are similar to the one found on the shell
+- auto complete UIs
+- lots of atlas products and organizations
+    - charts help build visual representations
+    - compass is a GUI
+        - can put things like coordinates into a map 
